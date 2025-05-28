@@ -11,7 +11,7 @@ BOT_TOKEN = os.getenv('BOT_TOKEN')
 if not BOT_TOKEN:
     raise ValueError("Không tìm thấy biến môi trường BOT_TOKEN")
 
-qr_image_path = "qr_vietcombank.jpg"
+qr_image_path = r"C:\Users\Administrator\BAOBOISHOP\GITHUB\qr_vietcombank.jpg"
 account_name, account_no, bank_name = "Nguyễn Văn A", "123456789", "Vietcombank"
 users, orders, qr_image_data = {}, {}, None
 
