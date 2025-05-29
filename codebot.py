@@ -51,7 +51,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.effective_user
     users[user.id] = {"username": user.username, "balance": users.get(user.id, {}).get("balance", 0)}
     text = (
-        "👋 *Shop Bảo Bối*  _xin chào!_...\n"
+        "👋 *ß𝐚̉𝓞 ß𝐨̂́𝖎 𝗦𝗛𝗢𝗣 ☘️*  _xin chào ...!_\n"
         "➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖\n"
         "• Ngoài bán mình cho tư bản ra thì nay em Bối còn bán thêm cả Bank Online & Tele Premium.\n"
         "🔰 Bank Online: Giao dịch nhanh chóng, an toàn, giá rẻ!\n"
@@ -85,7 +85,7 @@ async def handle_home(update: Update, context: ContextTypes.DEFAULT_TYPE):
         pass
     # Gửi bảng menu chính
     text = (
-        "👋 *Shop Bảo Bối*  _xin chào!_...\n"
+        "👋 *ß𝐚̉𝓞 ß𝐨̂́𝖎 𝗦𝗛𝗢𝗣 ☘️*  _xin chào ...!_\n"
         "➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖\n"
         "• Ngoài bán mình cho tư bản ra thì nay em Bối còn bán thêm cả Bank Online & Tele Premium.\n"
         "🔰 Bank Online: Giao dịch nhanh chóng, an toàn, giá rẻ!\n"
@@ -125,7 +125,7 @@ async def handle_support(update: Update, context: ContextTypes.DEFAULT_TYPE):
     except Exception:
         pass
     support = (
-        "📚 *Hướng dẫn sử dụng Bot* 📚\n\n"
+        "           📚 *Hướng dẫn sử dụng Bot* 📚\n\n"
         "• Shop mình không chắc hàng rẻ nhất, nhưng dịch vụ thì đỉnh cao , cam kết không làm bạn đợi quá 5 giây là “done tiền” nha! 😎\n"
         "1️⃣ Chọn đúng sản phẩm mình muốn (đừng nhầm sang món khác nha!)\n"
         "2️⃣ Xác nhận thanh toán hóa đơn (đừng quên nhá, kẻo Shop buồn!)\n"
@@ -195,7 +195,7 @@ async def handle_order_premium(update: Update, context: ContextTypes.DEFAULT_TYP
         '1': "      💎 *Gói 1 tháng cao cấp* 💎\n• Tốc độ tải xuống nhanh hơn\n• Tăng giới hạn gửi tin nhắn và tệp tin\n• Biểu tượng siêu ngầu, huy hiệu VIP\n• Tăng giới hạn gửi tin nhắn và tệp tin\n• *Thanh Toán  :  169.000 VND*\n",
         '3': "      💎 *Gói 3 tháng cao cấp* 💎 \n• Tốc độ tải xuống nhanh hơn\n• Tăng giới hạn gửi tin nhắn và tệp tin\n• Biểu tượng siêu ngầu, huy hiệu VIP\n• Tăng giới hạn gửi tin nhắn và tệp tin\n• *Thanh Toán  :  369.000 VND*\n",
         '6': "      💎 *Gói 6 tháng cao cấp* 💎\n• Tốc độ tải xuống nhanh hơn\n• Tăng giới hạn gửi tin nhắn và tệp tin\n• Biểu tượng siêu ngầu, huy hiệu VIP\n• Tăng giới hạn gửi tin nhắn và tệp tin\n• *Thanh Toán  :  569.000 VND*\n",
-        '12': "      💎 *Gói 12 tháng cao cấp* 💎\n• Tốc độ tải xuống nhanh hơn\n• Tăng giới hạn gửi tin nhắn và tệp tin\n• Biểu tượng siêu ngầu, huy hiệu VIP\n• Tăng giới hạn gửi tin nhắn và tệp tin\n• *Thanh Toán  :  869.000 VND*\n",
+        '12': "     💎 *Gói 12 tháng cao cấp* 💎\n• Tốc độ tải xuống nhanh hơn\n• Tăng giới hạn gửi tin nhắn và tệp tin\n• Biểu tượng siêu ngầu, huy hiệu VIP\n• Tăng giới hạn gửi tin nhắn và tệp tin\n• *Thanh Toán  :  869.000 VND*\n",
     }
     text = f"*♦️Gói được chọn:* *{period} Tháng Premium  ♦️* \n\n{descriptions.get(period, 'Không có mô tả cho gói này.')}"
     keyboard = [
@@ -210,7 +210,7 @@ async def handle_order_premium(update: Update, context: ContextTypes.DEFAULT_TYP
 async def handle_bank(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
     text = (
-        "           𝐁𝐀𝐍𝐊 𝐆𝐈𝐀́ 𝐑𝐄̉ & 𝐀𝐍 𝐓𝐎𝐀̀𝐍\n\n"
+        "         🏧  𝐁𝐀𝐍𝐊 𝐆𝐈𝐀́ 𝐑𝐄̉ & 𝐀𝐍 𝐓𝐎𝐀̀𝐍 🏧\n\n"
         "🔹 Bank Online với hạn mức lên đến 100 triệu/tháng , 20 triệu/ngày — thoải mái giao dịch không lo giới hạn!\n"
         "🔹  Không cần giấy tờ rườm rà, chỉ cần lòng tin và… điện thoại!\n"
         "🔹 Tên CCCD random , số điện thoại của bạn sử dụng lâu dài , cực kỳ bền bỉ và riêng tư.\n"
